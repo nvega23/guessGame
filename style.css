@@ -13,7 +13,6 @@ body{
 }
 
 .gameContainer{
-    border: 3px solid black;
     height: 100vh;
     display: flex;
     justify-content: center;
