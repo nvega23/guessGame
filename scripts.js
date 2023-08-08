@@ -1,6 +1,6 @@
 const wrongImage = './images/wrong.png'
 const correctImage = './images/check.png'
-const targetNumber = Math.floor(Math.random() * 100) + 1; // Generate a random number between 1 and 100
+const targetNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
 function checkGuess() {
@@ -14,7 +14,7 @@ function checkGuess() {
         attempts++;
         if (guess === targetNumber) {
             message.textContent = `Congratulations! You guessed the number ${targetNumber} in ${attempts} attempts.`;
-            guessInput.disabled = true; // Disable the input after winning
+            guessInput.disabled = true;
         } else if (guess < targetNumber) {
             message.textContent = "Try a higher number.";
         } else {
@@ -32,17 +32,17 @@ function checkName() {
 
     if (nameInput.value.toLowerCase() === "cynthia") {
         usernameMessage.textContent = "No, you are my girlfriend! Please Enter 'His world' to play!";
-        // Hide the game container (optional, if it was shown before)
+
         gameContainer.classList.add("hidden");
-        // Show the username container
+
         usernameContainer.classList.remove("hidden");
         usernameContainer.classList.add("slide-in");
         // resultImage.src = correctImage; // correct url
     } else {
         usernameMessage.textContent = "Enjoy the game!";
-        // Hide the username container
+
         usernameContainer.classList.add("hidden");
-        // Show the game container
+
         gameContainer.classList.remove("hidden");
         gameContainer.classList.add("slide-in");
         // resultImage.src = wrongImage; // incorrect url

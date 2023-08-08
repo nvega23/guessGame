@@ -78,6 +78,11 @@ body{
     align-items: center;
 }
 
+#nameMessage{
+    display: flex;
+    text-align: center;
+}
+
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);
