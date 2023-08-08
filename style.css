@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.usernameContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameContainer{
+    border: 3px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#guessInput{
+    padding: 10px 16px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.numberGuessingGame{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#message{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#usersName{
+    color: black;
+    font-size: 5vh;
+    padding: 10px 16px;
+    width: 55vh;
+    border: none;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#username:focus{
+    border: none;
+}
+
+#username:active{
+    border: transparent;
+}
+
+#usersName::placeholder{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.usernameContainer.slide-in,
+.gameContainer.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.buttonChange{
+    cursor: pointer;
+    padding: 10px 16px;
+    border: none;
+    background: linear-gradient(45deg, maroon, rgb(255, 55, 0));
+    color: white;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 25vh;
+    font-size: 2.5vh;
+}
+
+.buttonChange:hover{
+    font-size: 3.5vh;
+}
+
+input[type="text"],
+input[type="number"] {
+    outline: none;
+}

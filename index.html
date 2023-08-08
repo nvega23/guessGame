@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scripts.js">
+    <title>Guess Number</title>
+</head>
+    <body>
+        <div class="usernameContainer slide-in">
+            <h1 class="headerH1">
+                Enter your name
+            </h1>
+            <input id="usersName" type="text" placeholder="name...">
+            <br>
+            <button class="buttonChange" onclick="checkName()">Click to start!</button>
+            <p id="nameMessage"></p>
+
+            <script src="./scripts.js"></script>
+        </div>
+
+        <div class="gameContainer hidden">
+            <h1 class="numberGuessingGame">Number Guessing Game</h1>
+            <p>Guess a number between 1 and 100:</p>
+            <input type="number" id="guessInput">
+            <br>
+            <button class="buttonChange" onclick="checkGuess()">Check</button>
+            <p id="message"></p>
+            <img id="resultImage" src="" alt="Result Image">
+
+            <script src="./scripts.js"></script>
+        </div>
+    </body>
+</html>
