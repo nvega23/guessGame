@@ -38,6 +38,8 @@ function checkName() {
         usernameContainer.classList.remove("hidden");
         usernameContainer.classList.add("slide-in");
         // resultImage.src = correctImage; // correct url
+    } else if (nameInput.value.trim() === "") {
+        usernameMessage.textContent = "Please, enter a name.";
     } else {
         usernameMessage.textContent = "Enjoy the game!";
 
